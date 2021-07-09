@@ -247,7 +247,7 @@ a.header__nav__item__link:active {
     height: 338px;
     float: right;
     margin-top:387px;
-    margin-left: 700px;
+    margin-left: 800px;
     background: rgba(0, 84, 165, 0.4);
     border-radius: 61px;
 }
@@ -272,7 +272,8 @@ a.header__nav__item__link:active {
 .features__text {
     width: 60%;
     margin-top: 80px;
-    
+    margin-left: 1px;
+    margin-right: 50px;    
 }
 .features__text2 {
     width: 60%;
