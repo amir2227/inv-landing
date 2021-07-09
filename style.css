@@ -239,7 +239,7 @@ a.header__nav__item__link:active {
     left: 130px;
     margin-top: 115px;
     background: rgba(0, 84, 165, 0.4);
-    border-radius: 61px;
+    border-radius: 10px;
 }
 .features__box__right {
     position: absolute;
@@ -547,7 +547,7 @@ a.footer__list__link:active {
 
     .intro__heading { 
         font-size: 4.2rem;
-        line-height: 1.5;
+        line-height: 0;
         margin: 45px auto 0 auto;
         max-width: 730px;
         text-align: center;
