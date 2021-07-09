@@ -303,8 +303,8 @@ a.header__nav__item__link:active {
 }
 .team__box {
     position: absolute;
-    width: 230px;
-    height: 366px;
+    width: 200px;
+    height: 316px;
     margin-top: 260px;
     margin-left: 100px;
     background: rgba(57, 55, 55, 0.5);
@@ -314,9 +314,9 @@ a.header__nav__item__link:active {
 }
 .team__box1 {
     position: absolute;
-    width: 230px;
-    height: 366px;
-    margin-left: 360px;
+    width: 200px;
+    height: 316px;
+    margin-left: 300px;
     margin-top: 260px;
     background: rgba(57, 55, 55, 0.5);
     border: 1px solid #4D4C4C;
@@ -325,9 +325,9 @@ a.header__nav__item__link:active {
 }
 .team__box2 {
     position: absolute;
-    width: 230px;
-    height: 366px;
-    margin-left: 620px;
+    width: 200px;
+    height: 316px;
+    margin-left: 560px;
     margin-top: 260px;
     background: rgba(57, 55, 55, 0.5);
     border: 1px solid #4D4C4C;
@@ -336,9 +336,9 @@ a.header__nav__item__link:active {
 }
 .team__box3 {
     position: absolute;
-    width: 230px;
-    height: 366px;
-    margin-left: 880px;
+    width: 200px;
+    height: 316px;
+    margin-left: 820px;
     margin-top: 260px;
     background: rgba(57, 55, 55, 0.5);
     border: 1px solid #4D4C4C;
@@ -347,9 +347,9 @@ a.header__nav__item__link:active {
 }
 .team__box4 {
     position: absolute;
-    width: 230px;
-    height: 366px;
-    margin-left: 1140px;
+    width: 200px;
+    height: 316px;
+    margin-left: 1060px;
     margin-top: 260px;
     background: rgba(57, 55, 55, 0.5);
     border: 1px solid #4D4C4C;
