@@ -236,7 +236,7 @@ a.header__nav__item__link:active {
     position: absolute;
     width: 338px;
     height: 338px;
-    left: 135px;
+    left: 130px;
     margin-top: 115px;
     background: rgba(0, 84, 165, 0.4);
     border-radius: 61px;
@@ -247,7 +247,7 @@ a.header__nav__item__link:active {
     height: 338px;
     float: right;
     margin-top:387px;
-    margin-left: 800px;
+    margin-left: 700px;
     background: rgba(0, 84, 165, 0.4);
     border-radius: 61px;
 }
@@ -258,6 +258,15 @@ a.header__nav__item__link:active {
     /* Note: backdrop-filter has minimal browser support */
     margin-top: 40px;
     left: 30px;
+    border-radius: 86px;
+}
+.features__box2__right {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(30px);
+    /* Note: backdrop-filter has minimal browser support */
+    margin-top: 450px;
+    margin-left: 760px;
     border-radius: 86px;
 }
 .features__text {
