@@ -479,7 +479,7 @@ section {
 }
 
 .footer {
-    background-color: hsl(216, 53%, 9%);
+    background-color: hsl(180, 2%, 10%);
     padding: 200px var(--mobile-rhythm) 0 var(--mobile-rhythm);
     text-align: left;
 }
