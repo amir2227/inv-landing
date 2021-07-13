@@ -354,50 +354,7 @@ a.header__nav__item__link:active {
     max-height: 300px;
     
 }
-.team__box1 {
-    position: absolute;
-    width: 200px;
-    height: 316px;
-    margin-left: 330px;
-    margin-top: 260px;
-    background: rgba(57, 55, 55, 0.5);
-    border: 1px solid #4D4C4C;
-    box-sizing: border-box;
-    border-radius: 80px 40px 24px 24px;
-}
-.team__box2 {
-    position: absolute;
-    width: 200px;
-    height: 316px;
-    margin-left: 560px;
-    margin-top: 260px;
-    background: rgba(57, 55, 55, 0.5);
-    border: 1px solid #4D4C4C;
-    box-sizing: border-box;
-    border-radius: 80px 40px 24px 24px;
-}
-.team__box3 {
-    position: absolute;
-    width: 200px;
-    height: 316px;
-    margin-left: 790px;
-    margin-top: 260px;
-    background: rgba(57, 55, 55, 0.5);
-    border: 1px solid #4D4C4C;
-    box-sizing: border-box;
-    border-radius: 80px 40px 24px 24px;
-}
-.team__box4 {
-    position: absolute;
-    width: 200px;
-    height: 316px;
-    margin-left: 1020px;
-    margin-top: 260px;
-    background: rgba(57, 55, 55, 0.5);
-    border: 1px solid #4D4C4C;
-    box-sizing: border-box;
-    border-radius: 80px 40px 24px 24px;
-}
+
 .contact__form {
     width: 70%;
     grid-area: 1/1;
@@ -406,13 +363,14 @@ a.header__nav__item__link:active {
     backdrop-filter: blur(80px);
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 24px 0px 0px 24px;
+    border-color: #a3a3a379;
+    border-style: solid;
     float: right;
     padding-left: 20%;
 }
 section {
-    padding-top: 20px;
+    padding-top: 30px;
     margin-top: 10px;
-    padding-bottom: 20px;
     width: 100%;
 }
 .row {
@@ -433,7 +391,8 @@ section {
     position: absolute;
     padding-top: 10px;
     padding-bottom: 20px;
-    
+    border-color: #a3a3a379;
+    border-style: solid;
 }
 .contact_text {
     width: 95%;
@@ -481,15 +440,11 @@ section {
 }
 .footer {
     background-color: hsl(180, 2%, 10%);
-    padding: 85px var(--mobile-rhythm) 0 var(--mobile-rhythm);
-    
+    padding: 50px var(--mobile-rhythm) 0 var(--mobile-rhythm);
+    border-color: #a3a3a379;
+    border-style: solid;
     
 }
-
-.footer__logo {
-    margin: 145px 0 0 30px;
-}
-
 .footer__sections__text {
     display: flex;
     align-items: flex-start;
@@ -714,13 +669,13 @@ a.footer__list__link:active {
     .footer__sections {
         align-items: start;
         display: grid;
-        gap: 60px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 26%;
         grid-template-rows: 1fr;
         justify-content: start;
         margin: var(--desktop-center);
         max-width: var(--desktop-container);
-        padding-left: 16%;
+        padding-left: 8%;
     }
 
     .footer__list,
@@ -731,6 +686,7 @@ a.footer__list__link:active {
 
     .footer__social { 
         display: block;
+        float: left;
     }
 
     .footer__image {
