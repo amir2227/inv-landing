@@ -9,27 +9,27 @@
 <link rel="stylesheet" href="./style.css">
 <link rel="stylesheet" href="./style/css/loader.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 <!--  <div id="loader-wrapper">
     <div id="loader"><div class="sk-spinner sk-spinner-cube-grid"><div class="sk-cube"></div><div class="sk-cube"></div><div class="sk-cube"></div><div class="sk-cube"></div><div class="sk-cube"></div><div class="sk-cube"></div><div class="sk-cube"></div><div class="sk-cube"></div><div class="sk-cube"></div></div></div>
   </div>-->
+
   <div class="first">
   <header class="header">
-    <div class="header__inner">
-    <img src="./images/logo-web.png" alt="fylo logo" class="header__logo" />
-
-    <nav>
-      <ul class="header__nav">
-        <li class="header__nav__item"><a href="#" class="header__nav__item__link">Home</a></li>
-        <li class="header__nav__item"><a href="#" class="header__nav__item__link">About</a></li>
-        <li class="header__nav__item"><a href="#" class="header__nav__item__link">Team</a></li>
-        <li class="header__nav__item"><a href="#" class="header__nav__item__link" style="background-color: #0054A5; padding: 10px;">Contact</a></li>
-        
-      </ul>
-    </nav>
-  </div>
+    <div class="topnav" id="myTopnav">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="active">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      
+    </div>
+  <img src="./images/logo-web.png"  class="header__logo">
   </header>
 
   <div class="intro__lower"></div>
@@ -54,12 +54,11 @@
   <div class="vector"></div>
 </center>
 
-
+<section id="features">
 <div class="features">
-
 <div class="features_back"></div>
-<div class="features__box"></div>
-<div class="features__box2"> <img src="./images/plan.png" class="features__box__image" ></div>
+<div class="features__box"><div class="invisible"></div></div>
+<div class="features__box2"><img src="./images/plan.png" class="features__box__image" ></div>
 <div class="features__text">
 <h2>A creative team which builds stunning UI/UX</h2>
 some text about this feature like wow wow wow wow wow
@@ -71,6 +70,7 @@ some text about this feature like wow wow wow wow wow
   <div class="features__box__right"></div>
   <div class="features__box2__right"><img src="./images/img2.png" class="features__box__image" ></div>
 </div>
+</section>
 <section id="team">
   <img src="./images/“-2.png" class="head_img" >
   <div class="heading">
@@ -83,13 +83,15 @@ some text about this feature like wow wow wow wow wow
   
 <div class="box">
   <img src="./images/payman.png" style="border-radius: 24px 40px 24px 80px;">
+  <div style="height: 300px">
   <h3>Payam Khosravinejad</h3>Holding CEO
+</div>
 </div>
 
 <div class="box"><img src="./images/behrad.png" style="border-radius: 24px 80px 24px 40px;"><h2>Brad Shojaei</h2>Beyond click CEO</div>
 <div class="box"><img src="./images/saeed.png" style="border-radius: 80px 24px 24px 24px;"><h2>Saeed Karam</h2>moroorgar CEO</div>
 <div class="box"><img src="./images/esmail.png" style="border-radius: 24px 24px 80px 40px;"><h2>Hossein Esmaili</h2>Nano Net CEO</div>
-<div class="box"><img src="./images/melodi.png" style="border-radius: 80px 40px 24px 24px;"><h2>Melodi Karam</h2>Advitex CEO
+<div class="box"><img src="./images/melodi.png" style="border-radius: 80px 40px 24px 24px;"><h2>Melodi Karam</h2>Advitex CEO<br>
 <img src="./images/“.png" style="width: 100%; max-width: 150px;">
 </div>
 
@@ -189,6 +191,16 @@ some text about this feature like wow wow wow wow wow
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script  src="./script.js"></script>
   <script  src="./style/js/functions.js"></script>
-
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    
 </body>
 </html>

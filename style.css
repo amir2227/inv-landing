@@ -24,6 +24,7 @@
 html {
     background-color: #000000;
     font-size: 10px;
+
 }
 
 body {
@@ -32,7 +33,7 @@ body {
     font-size: var(--main-text-size);
     line-height: var(--main-text-line-height);
     background: #000000;
-    
+    overflow-x: hidden;
 }
 
 /* utilities */
@@ -62,15 +63,55 @@ body {
 
 .container { 
     margin: 0 auto;
-    max-width: 1220px; 
+     
 }
 
 /* end utilities */
 
 .header {
-    background: #000000;
-}
+    background: #000000 !important;
 
+}
+.topnav {
+    background-color: #000;
+    overflow: hidden;
+    float: right;
+    background: #000000;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 73px;
+    margin-top: 32px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    border-top: #0054A5 solid;
+    
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #0054A5;
+    color: white;
+  }
+  .topnav a.active:hover {
+    background-color: #000000;
+    border-top: #0054A5 solid;
+    color: white;
+  }
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
 .header__inner {
     align-items: inherit;
     display: flex;
@@ -82,6 +123,7 @@ body {
 .header__logo {
     padding-top: 20px; 
     max-width: 130px; 
+    margin-left: 14px;
 }
 .customer__logo {
     max-width: 240px;
@@ -121,7 +163,7 @@ a.header__nav__item__link:active {
 .intro {
     background: #000000;
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: 100%;
     
     padding: 0;
 }
@@ -145,12 +187,12 @@ a.header__nav__item__link:active {
     font-family: var(--font-headings);
     font-style: normal;
     font-weight: 900;
-    font-size: 80px;
-    line-height: 90px;
+    font-size: 40px;
+    line-height: 1px;
     width: 100%;
     color: rgb(247, 241, 241);
-    top: 170px;
-    left: 0px;
+    top: 270px;
+    left: 15%;
 }
 .line {
     position: absolute;
@@ -177,7 +219,7 @@ a.header__nav__item__link:active {
     height: 30%;
     left: 40px;
     top: 200px;
-    background: radial-gradient(73.42% 73.42% at 50% 50%, rgba(22, 142, 228, 0.9) 0%, rgba(18, 119, 163, 0) 100%);
+    background: radial-gradient(73.42% 73.42% at 50% 50%, rgba(22, 142, 228, 0.9) 50%, rgba(18, 119, 163, 0) 100%);
     filter: blur(254px);
     width: 40%;
     float: left;
@@ -217,38 +259,35 @@ a.header__nav__item__link:active {
     text-align: center;
     padding: 50px 0;
 }
-
+#features{
+    padding: 20px;
+    margin: 0;
+}
 .features {
     width: 100%;
     height: 750px;
     
 }
 .features_back {
-    position: relative;
-    height: 60%;
-    top: 200px;
+    position: absolute;
+    height: 50%;
     background: radial-gradient(73.42% 73.42% at 50% 50%, rgba(22, 142, 228, 0.8) 90%, rgba(18, 119, 163, 0) 100%);
     filter: blur(254px);
-    width: 60%;
-    left: 80%;
-    
+    width: 34%;    
+    margin-top: 18%;
+    margin-left: 26%;
+}
+.features__box__image {
+    margin: 5%;
+    width: 90%;
+    border-radius: 70px;
 }
 .features__box {
     position: absolute;
-    width: 338px;
-    height: 338px;
-    left: 130px;
-    margin-top: 115px;
-    background: rgba(0, 84, 165, 0.4);
-    border-radius: 61px;
-}
-.features__box__right {
-    position: absolute;
-    width: 338px;
-    height: 338px;
-    float: right;
-    margin-top:387px;
-    margin-left: 700px;
+    width: 340px;
+    height: 340px;
+    left: 7%;
+    margin-top: 4%;
     background: rgba(0, 84, 165, 0.4);
     border-radius: 61px;
 }
@@ -256,36 +295,47 @@ a.header__nav__item__link:active {
     position: absolute;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(30px);
+    width: 340px;
     /* Note: backdrop-filter has minimal browser support */
-    margin-top: 40px;
-    left: 30px;
+    margin-top: 0;
+    left: 2%;
     border-radius: 86px;
 }
+.features__box__right {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    float: right;
+    margin-top:23%;
+    margin-left: 60%;
+    background: rgba(0, 84, 165, 0.4);
+    border-radius: 61px;
+}
+
 .features__box2__right {
     position: absolute;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(30px);
+    width: 340px;
     /* Note: backdrop-filter has minimal browser support */
-    margin-top: 450px;
-    margin-left: 760px;
+    margin-top: 27%;
+    margin-left: 65%;
     border-radius: 86px;
 }
 .features__text {
-    width: 60%;
-    margin-top: 80px;
+    position: absolute;
+    width: 25%;
+    margin-left: 52%;
+    text-justify: inter-word;
+    margin-top: 4%;
     
 }
 .features__text2 {
-    width: 60%;
-    margin-top: 80px;
-    margin-left: 290px;
+    position: absolute;
+    width: 25%;
+    margin-top: 33%;
+    margin-left: 20%;
 }
-.features__box__image {
-    margin: 15px 20px 15px 20px;
-    width: 340px;
-    border-radius: 70px;
-}
-
 .features__box__heading,
 .productive__heading,
 .earlyaccess__heading {
@@ -298,7 +348,7 @@ a.header__nav__item__link:active {
     width: 100%;
     justify-content: center;
     height: auto;
-    padding: 30px;
+    padding: 0px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -308,9 +358,9 @@ a.header__nav__item__link:active {
     background-image: url(./images/team-back.png);
     background-repeat: no-repeat;
     background-size: 84%;
-    background-position-y: 100px;
+    background-position-y: 40px;
     height: auto;
-    padding-top:120px;
+    padding-top:60px;
     padding-bottom:200px;
 }
 .heading {
@@ -325,13 +375,14 @@ a.header__nav__item__link:active {
 .head_img {
     width: 100%; 
     max-width: 150px;
-    margin-left: 200px;
+    margin-left: 10%;
     float: left;
+    padding-bottom: 15px;
 }
 .team .box {
     width: 200px;
-    margin: 0 16px;
-    height: 316px;
+    margin: 0 16px 8px;
+    height: 450px;
     background: rgba(57, 55, 55, 0.5);
     border: 1px solid #4D4C4C;
     box-sizing: border-box;
@@ -348,6 +399,7 @@ a.header__nav__item__link:active {
     background-repeat: no-repeat;
     width: 100%;
     background-size: 100%;
+    margin-top: 30px;
 }
 .box img {
     
@@ -383,7 +435,7 @@ section {
 .contact__area {
     margin-top: 30px;
     width: 26%;
-    margin-left: 220px;
+    margin-left: 20%;
     background: #232323;
     backdrop-filter: blur(84px);
     /* Note: backdrop-filter has minimal browser support */
@@ -412,7 +464,7 @@ section {
 #contact{
     position: relative;
     height: 320px;
-    margin-top: 80px;
+    
     padding-top: 1px;
 }
 .sub_btn {
@@ -456,6 +508,17 @@ section {
     align-items: center;
     display: flex;
     justify-content: flex-start;
+}
+.footer__sections {
+    align-items: start;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 26%;
+    grid-template-rows: 1fr;
+    justify-content: start;
+    margin: var(--desktop-center);
+    max-width: var(--desktop-container);
+    padding-left: 8%;
 }
 
 .footer__sections__text__inner {
@@ -525,20 +588,38 @@ a.footer__list__link:active {
 .attribution a { color: hsl(228, 45%, 44%); color: #fff; }
 
 
-@media (min-width: 800px) {
+@media only screen and (max-width: 800px) {
 
     .header {
         padding: 0 2%;
+        background: #000000;
     }
-
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+      margin: 0;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        padding-right: 50px;
+        background: #00000080;
+    }
     .header__inner {
         justify-content: space-between;
         max-width: var(--desktop-container);
         margin: var(--desktop-center);
     }
-
     .intro {
-        background-image: url('https://bobmatyas.github.io/fm-fylo-dark-landing-page/images/bg-curvy-desktop.svg');
+        background: #000000;
         background-position: bottom center;
         background-repeat: no-repeat;
         background-size: 100% 400px;
@@ -553,15 +634,50 @@ a.footer__list__link:active {
     .intro__upper {
         padding: 0;
     }
-
-    .intro__heading { 
-        font-size: 4.2rem;
-        line-height: 0;
-        margin: 45px auto 0 auto;
-        max-width: 730px;
-        text-align: center;
+    .intro__heading {
+        position: absolute;
+        font-family: var(--font-headings);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 2px;
+        width: 100%;
+        color: rgb(247, 241, 241);
+        top: 170px;
+        left: 15%;
     }
-
+    .first {
+        background-image: url("./images/map.png");
+        background-size: 69%;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-position-y: 109px;
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        padding-top: 0px;
+    }
+    .intro__lower {
+        position: relative;
+        height: 40%;
+        left: 40px;
+        top: 100px;
+        background: radial-gradient(73.42% 73.42% at 50% 50%, rgba(22, 142, 228, 0.9) 90%, rgba(18, 119, 163, 0) 100%);
+        filter: blur(254px);
+        width: 40%;
+        float: left;
+    }
+    .header__logo {
+        padding-top: 10px; 
+        max-width: 90px; 
+    }
+    .customer__logo {
+        max-width: 140px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+    }
     .intro__cta {
         background-color: transparent;
         margin: var(--desktop-center);
