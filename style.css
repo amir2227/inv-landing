@@ -102,6 +102,9 @@ body {
   .topnav a.active {
     background-color: #0054A5;
     color: white;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
   }
   .topnav a.active:hover {
     background-color: #000000;
@@ -379,6 +382,13 @@ a.header__nav__item__link:active {
     float: left;
     padding-bottom: 15px;
 }
+.foot_img {
+    width: 100%; 
+    max-width: 150px;
+    margin-right: 10%;
+    float: right;
+    padding-bottom: 15px;
+}
 .team .box {
     width: 200px;
     margin: 0 16px 8px;
@@ -450,16 +460,32 @@ section {
     width: 95%;
     background: #454444;
     height: 30px;
+    color: #fff;
     margin: 8px;
     border-radius: 70px;
     border-style: solid;
     border-color: rgba(177, 175, 175, 0.582);
+    font-family: FontAwesome;
+    padding-left: 5%;
+}
+.contact_text::placeholder{
+    color: rgba(255, 255, 255, 0.685);
+    font-size: medium;
+    padding-left: 1%;
 }
 .contact__text__area{
     width: 95%;
     background: #454444;
     margin: 8px;
     border-radius: 19px;
+    color: #fff;
+    font-family: FontAwesome;
+    padding-left: 5%;
+}
+.contact__text__area::placeholder{
+    color: rgba(255, 255, 255, 0.685);
+    font-size: medium;
+    padding-left: 1%;
 }
 #contact{
     position: relative;
@@ -733,55 +759,40 @@ a.footer__list__link:active {
         grid-template-rows: 1fr 1fr;
     }
 
-    .quotes__inner {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: 35px;
+
+    #contact{
+        margin-bottom: 30px;
     }
 
-    .productive {
-        align-items: center;
-        display: grid;
-        gap: 50px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        justify-content: center;
+    .contact__area {
+        margin-top: 30px;
+        width: 40%;
+        margin-left: 6%;
+        background: #232323;
+        backdrop-filter: blur(84px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 24px;
+        position: absolute;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        border-color: #a3a3a379;
+        border-style: solid;
     }
-
-    .productive__heading {
-        font-size: 3.3rem;
-        line-height: 1.2;
-        text-align: left;
-        max-width: 65%;
+    .contact_text {
+        width: 90%;
+        background: #454444;
+        height: 30px;
+        margin: 8px;
+        border-radius: 70px;
+        border-style: solid;
+        border-color: rgba(177, 175, 175, 0.582);
     }
-
-    .earlyaccess {
-        max-width: 730px;
-        margin-left: auto;
-        margin-right: auto;
+    .contact__text__area{
+        width: 90%;
+        background: #454444;
+        margin: 8px;
+        border-radius: 19px
     }
-
-    .earlyaccess__button {
-        margin: 0;
-        width: 225px;
-    }
-
-    .earlyaccess__form {
-        align-items: center;
-        display: flex;
-        justify-content: space-around;
-        margin: 25px auto 0 auto;
-    }
-    
-    .earlyaccess__email {
-        width: 380px;
-    }
- 
-    .earlyaccess__button {
-        max-width: 200px;
-    }
-
     .footer__sections {
         align-items: start;
         display: grid;
