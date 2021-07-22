@@ -25,6 +25,9 @@
 html {
     background-color: #000000;
     font-size: 10px;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
 
 }
     /* width */
@@ -53,7 +56,11 @@ body {
     font-size: var(--main-text-size);
     line-height: var(--main-text-line-height);
     background: #000000;
-    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    
+    
 }
 
 /* utilities */
@@ -219,9 +226,9 @@ a.header__nav__item__link:active {
     font-weight: 900;
     font-size: 40px;
     line-height: 1px;
-    width: 100%;
+    
     color: rgb(247, 241, 241);
-    top: 270px;
+    top: 320px;
     left: 15%;
 }
 .line {
@@ -331,6 +338,10 @@ a.header__nav__item__link:active {
     
     width: 50%;
     text-align: justify;
+}
+#p1 {
+    text-justify: inter-word; 
+    font-size: 15px;
 }
 .features__box__image {
     margin-left: 22%;
@@ -442,7 +453,7 @@ a.header__nav__item__link:active {
     float: right;
     padding-left: 40%;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 135px;
 }
 section {
     padding-top: 30px;
@@ -504,7 +515,7 @@ section {
 #contact{
     position: relative;
     height: 320px;
-    
+
     padding-top: 1px;
 }
 .sub_btn {
@@ -557,6 +568,9 @@ a.footer__list__link:active {
     line-height: 8px;
     padding-bottom: 50px;
 }
+.footer_inv h1{
+    font-size: 30px;
+}
 .footer__social {
     list-style-type: none;
     margin-top: 4%;
@@ -605,11 +619,24 @@ a.footer__list__link:active {
         overflow-y: scroll;
         height: 250px;
     }
+    .features__box{
+        margin-top: 16%;
+        width: 250px;
+        height: 250px;
+        border-radius: 30px;
+    }
+    .features__box__image{
+        margin-top: 45%;
+        width: 250px;
+        height: 250px;
+        border-radius: 30px;
+    }
     .inline_text h1{
         font-size: 20px;
     }
     .inline_text{
         margin-left: 30px;
+        margin-top: 11%;
     }
 }
 
@@ -666,7 +693,7 @@ a.footer__list__link:active {
         font-weight: 500;
         font-size: 25px;
         line-height: 2px;
-        width: 100%;
+        
         color: rgb(247, 241, 241);
         top: 170px;
         left: 15%;
@@ -696,6 +723,9 @@ a.footer__list__link:active {
         padding-top: 10px; 
         max-width: 90px; 
     }
+    .features {
+        border-radius: 0px 40px 40px 0px;
+    }
     .features__box{
         margin-top: 19%;
         width: 150px;
@@ -710,33 +740,15 @@ a.footer__list__link:active {
     }
     .inline_text{
         width: 50%;
-        margin: 2px 0 0 0 0;
+        margin: 2px 0px 0px 10px;
         
     }
     #p1{
         overflow-y: scroll;
         height: 250px;
+        font-size: 10px;
     }
-        /* width */
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
-    
-    /* Track */
-    ::-webkit-scrollbar-track {
-        background: #61606000;
-    }
-    
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-        background: rgba(136, 136, 136, 0.507);
-        border-radius: 50px;
-    }
-    
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-        background: #555; 
-    }
+     
     .inline_text h1{
         font-size: 20px;
     }
@@ -796,12 +808,75 @@ a.footer__list__link:active {
     .footer_inv{
         padding-top: 70px;
     }
+    .customer__logo {
+        max-width: 100px;
+        padding-left: 14px;
+        width: 100%;
+    }
 }
 
 
 
-@media screen and (min-width: 1700px) {
-    .intro {
-        background-size: contain;
+@media screen and (max-width: 500px) {
+ 
+    .footer_inv{
+        padding-top: 70px;
+        font-size: 10px;
     }
+    .footer_inv h1{
+        font-size: 20px;
+    }
+    .footer__social{
+        display: inline-block;
+        position: initial;
+        
+    }
+    .footer__social li{
+        
+        size: 20px;
+    }
+    .footer{
+        padding: 0px 0px 30px 0px;
+        margin: 0px;
+    }
+    #footer{
+        padding-top: 80px;
+    }
+    .inline_text{
+        width: 50%;
+        margin: 0px 0px 0px 7%;
+        
+    }
+    #p1{
+        overflow-y: scroll;
+        height: 170px;
+        font-size: 10px;
+    }
+     
+    .inline_text h1{
+        font-size: 15px;
+    }
+    .features__box{
+        margin-top: 19%;
+        width: 110px;
+        height: 110px;
+        border-radius: 20px;
+    }
+    .features__box__image{
+        margin-top: 55%;
+        width: 110px;
+        height: 110px;
+        border-radius: 20px;
+    }
+    .features {
+        width: 98%;
+        border-radius: 0px 40px 46px 0px;
+        padding-bottom: 80px;
+    }
+    .customer__logo {
+        max-width: 80px;
+        padding-left: 14px;
+        width: 90%;
+    }
+
 }
