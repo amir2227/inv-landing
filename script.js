@@ -1,4 +1,3 @@
-'use strict';
 
 const emailCheck = () => {
   const emailAddress = document.getElementById('email').value;
@@ -34,3 +33,47 @@ sr.reveal ('.img_delay',{})
 sr.reveal ('.contact__form div',{delay:200})
 sr.reveal ('input',{})
 sr.reveal ('textarea',{})
+sr.reveal ('.inline_text',{})
+
+$(document).ready(function () {
+  $("#inv").click(function () {
+      $("#abouth1").fadeOut(function () {
+          $("#abouth1").text('Investing Skills').fadeIn();
+      })
+      $("#p1").fadeOut(function () {
+        $("#p1").fadeIn(delay=2000);
+    })
+  })
+  $("#adv").click(function () {
+    $("#abouth1").fadeOut(function () {
+        $("#abouth1").text('Advitex').fadeIn();
+    })
+    $("#p1").fadeOut(function () {
+      $("#p1").fadeIn(delay=2000);
+  })
+})
+$("#bey").click(function () {
+  $("#abouth1").fadeOut(function () {
+      $("#abouth1").text('Beyond Click').fadeIn();
+  })
+  $("#p1").fadeOut(function () {
+    $("#p1").fadeIn(delay=2000);
+})
+})
+$("#nan").click(function () {
+  $("#abouth1").fadeOut(function () {
+      $("#abouth1").text('Nano Net').fadeIn();
+  })
+  $("#p1").fadeOut(function () {
+    $("#p1").fadeIn(delay=2000);
+})
+})
+$("#mor").click(function () {
+  $("#abouth1").fadeOut(function () {
+      $("#abouth1").text('Moroorgar').fadeIn();
+  })
+  $("#p1").fadeOut(function () {
+    $("#p1").fadeIn(delay=2000);
+})
+})
+});

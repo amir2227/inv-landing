@@ -126,14 +126,21 @@ body {
 .header__logo {
     padding-top: 20px; 
     max-width: 130px; 
-    margin-left: 14px;
+    margin-left: 24px;
+    
 }
 .customer__logo {
-    max-width: 240px;
+    max-width: 220px;
     padding-left: 90px;
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
+    filter: grayscale(100%);
+    transition: 0.1s;
+}
+.customer__logo:hover {
+    filter: grayscale(1%);
+    
 }
 .header__nav {
     align-items:flex-start;
@@ -213,7 +220,7 @@ a.header__nav__item__link:active {
     background-position: right;
     background-position-y: 85px;
     width: 100%;
-    height: 500px;
+    height: 700px;
     margin-top: 0px;
     padding-top: 0px;
 }
@@ -263,13 +270,22 @@ a.header__nav__item__link:active {
     padding: 50px 0;
 }
 #features{
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin: 0;
+    width: 100%;
+    height: auto;
 }
 .features {
-    width: 100%;
-    height: 750px;
-    
+    justify-content: start;
+    height: auto;
+    padding-bottom: 10%;
+    margin: 0;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 0px 80px 86px 0px;
 }
 .features_back {
     position: absolute;
@@ -280,73 +296,46 @@ a.header__nav__item__link:active {
     margin-top: 18%;
     margin-left: 26%;
 }
+.inline { 
+    display: inline-block; 
+    width: 40%;
+    height: auto;
+    
+}
+.inline_text { 
+    position: absolute;
+    display: inline-block; 
+    margin-left: 3%;
+    
+    width: 50%;
+    text-align: justify;
+}
 .features__box__image {
-    margin: 5%;
-    width: 90%;
-    border-radius: 70px;
+    margin-left: 22%;
+    margin-top: 21%;
+    width: 310px;
+    height: 310px;
+    border-radius: 40px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.features__textbox{
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 8.5%;
+    border: solid red;
 }
 .features__box {
     position: absolute;
     width: 340px;
     height: 340px;
-    left: 7%;
-    margin-top: 4%;
+    left: 8%;
+    margin-top: 6%;
     background: rgba(0, 84, 165, 0.4);
     border-radius: 61px;
-}
-.features__box2 {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(30px);
-    width: 340px;
-    /* Note: backdrop-filter has minimal browser support */
-    margin-top: 0;
-    left: 2%;
-    border-radius: 86px;
-}
-.features__box__right {
-    position: absolute;
-    width: 340px;
-    height: 340px;
-    float: right;
-    margin-top:23%;
-    margin-left: 60%;
-    background: rgba(0, 84, 165, 0.4);
-    border-radius: 61px;
+    transform: rotate(-16.38deg);
 }
 
-.features__box2__right {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(30px);
-    width: 340px;
-    /* Note: backdrop-filter has minimal browser support */
-    margin-top: 27%;
-    margin-left: 65%;
-    border-radius: 86px;
-}
-.features__text {
-    position: absolute;
-    width: 25%;
-    margin-left: 52%;
-    text-justify: inter-word;
-    margin-top: 4%;
-    
-}
-.features__text2 {
-    position: absolute;
-    width: 25%;
-    margin-top: 33%;
-    margin-left: 20%;
-}
-.features__box__heading,
-.productive__heading,
-.earlyaccess__heading {
-    font-family: var(--font-headings);
-    font-size: 1.8rem;
-    font-weight: var(--font-weight-headings);
-    margin-top: 0;
-}
+
 .team {
     width: 100%;
     justify-content: center;
@@ -356,6 +345,7 @@ a.header__nav__item__link:active {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center; 
+    background: rgba(224, 224, 224, 0.3);
 }
 #team {
     background-image: url(./images/team-back.png);
@@ -385,23 +375,29 @@ a.header__nav__item__link:active {
 .foot_img {
     width: 100%; 
     max-width: 150px;
-    margin-right: 10%;
+    margin-right: 15%;
     float: right;
     padding-bottom: 15px;
+    margin-top: 20px;
+}
+.team .img_delay{
+    border-radius: 24px;
+    width: 160px;
 }
 .team .box {
-    width: 200px;
-    margin: 0 16px 8px;
-    height: 450px;
-    background: rgba(57, 55, 55, 0.5);
-    border: 1px solid #4D4C4C;
-    box-sizing: border-box;
-    border-radius: 80px 40px 24px 24px;
+    width: 195px;
+    height: 390px;
     text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    
 }
 .team .box h2,h3 {
     margin-top: 20px;
     width: 100%;
+}
+.h5_delay{
+    font-size: 18px;
 }
 .dambol{    
     max-width: 400px;
